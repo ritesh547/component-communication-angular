@@ -1,0 +1,22 @@
+<!-- chid.component.html -->
+
+<div class="container mt-5">
+    <h3>Received Data Table</h3>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngIf="receivedData">
+          <td>{{ receivedData.id }}</td>
+          <td>{{ receivedData.name }}</td>
+          <td>{{ receivedData.email }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  
